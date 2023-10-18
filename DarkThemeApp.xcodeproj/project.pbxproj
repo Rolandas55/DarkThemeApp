@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		2BAF72912AE01F90000A5F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF72902AE01F90000A5F55 /* AppDelegate.swift */; };
 		2BAF72932AE01F90000A5F55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF72922AE01F90000A5F55 /* SceneDelegate.swift */; };
-		2BAF72952AE01F90000A5F55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF72942AE01F90000A5F55 /* ViewController.swift */; };
+		2BAF72952AE01F90000A5F55 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF72942AE01F90000A5F55 /* ThemeViewController.swift */; };
 		2BAF72982AE01F90000A5F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAF72962AE01F90000A5F55 /* Main.storyboard */; };
 		2BAF729A2AE01F92000A5F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BAF72992AE01F92000A5F55 /* Assets.xcassets */; };
-		2BAF729D2AE01F92000A5F55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAF729B2AE01F92000A5F55 /* LaunchScreen.storyboard */; };
+		2BAF72AA2AE081B4000A5F55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAF729B2AE01F92000A5F55 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BAF728D2AE01F90000A5F55 /* DarkThemeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkThemeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAF72902AE01F90000A5F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BAF72922AE01F90000A5F55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BAF72942AE01F90000A5F55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BAF72942AE01F90000A5F55 /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		2BAF72972AE01F90000A5F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BAF72992AE01F92000A5F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BAF729C2AE01F92000A5F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		2BAF728F2AE01F90000A5F55 /* DarkThemeApp */ = {
 			isa = PBXGroup;
 			children = (
-				2BAF72902AE01F90000A5F55 /* AppDelegate.swift */,
-				2BAF72922AE01F90000A5F55 /* SceneDelegate.swift */,
-				2BAF72942AE01F90000A5F55 /* ViewController.swift */,
-				2BAF72962AE01F90000A5F55 /* Main.storyboard */,
+				2BAF72A42AE024C1000A5F55 /* AppDelegate */,
+				2BAF72A52AE02648000A5F55 /* Model */,
+				2BAF72A62AE02650000A5F55 /* View */,
+				2BAF72A72AE02A23000A5F55 /* Controller */,
 				2BAF72992AE01F92000A5F55 /* Assets.xcassets */,
-				2BAF729B2AE01F92000A5F55 /* LaunchScreen.storyboard */,
 				2BAF729E2AE01F92000A5F55 /* Info.plist */,
 			);
 			path = DarkThemeApp;
+			sourceTree = "<group>";
+		};
+		2BAF72A42AE024C1000A5F55 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2BAF72902AE01F90000A5F55 /* AppDelegate.swift */,
+				2BAF72922AE01F90000A5F55 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2BAF72A52AE02648000A5F55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BAF72A62AE02650000A5F55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BAF72962AE01F90000A5F55 /* Main.storyboard */,
+				2BAF729B2AE01F92000A5F55 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BAF72A72AE02A23000A5F55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BAF72942AE01F90000A5F55 /* ThemeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BAF729D2AE01F92000A5F55 /* LaunchScreen.storyboard in Resources */,
+				2BAF72AA2AE081B4000A5F55 /* LaunchScreen.storyboard in Resources */,
 				2BAF729A2AE01F92000A5F55 /* Assets.xcassets in Resources */,
 				2BAF72982AE01F90000A5F55 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BAF72952AE01F90000A5F55 /* ViewController.swift in Sources */,
+				2BAF72952AE01F90000A5F55 /* ThemeViewController.swift in Sources */,
 				2BAF72912AE01F90000A5F55 /* AppDelegate.swift in Sources */,
 				2BAF72932AE01F90000A5F55 /* SceneDelegate.swift in Sources */,
 			);
@@ -303,7 +335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.DarkThemeApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -330,7 +362,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.DarkThemeApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
